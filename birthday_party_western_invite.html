@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garden Birthday Party</title>
+    <style>
+      :root {
+        --cream: #f8f1e4;
+        --sand: #ead7b7;
+        --tan: #c49a6c;
+        --brown: #6e4b2f;
+        --dark-brown: #3f2a1d;
+        --rust: #a14f2a;
+        --sage: #7d8b65;
+        --shadow: rgba(63, 42, 29, 0.18);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--dark-brown);
+        background:
+          radial-gradient(circle at top, rgba(255,255,255,0.4), transparent 40%),
+          linear-gradient(180deg, #fdf8ef 0%, var(--cream) 55%, #f2e6d1 100%);
+        line-height: 1.6;
+      }
+
+      .page {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 24px;
+      }
+
+      .invite {
+        background: rgba(255, 251, 244, 0.92);
+        border: 3px solid var(--brown);
+        border-radius: 22px;
+        box-shadow: 0 16px 40px var(--shadow);
+        overflow: hidden;
+      }
+
+      .hero {
+        padding: 42px 28px 30px;
+        text-align: center;
+        background:
+          linear-gradient(rgba(62, 42, 29, 0.1), rgba(62, 42, 29, 0.05)),
+          linear-gradient(135deg, #f5e5c7, #f0d7ab);
+        border-bottom: 3px solid var(--brown);
+        position: relative;
+      }
+
+      .hero::before,
+      .hero::after {
+        content: "✦";
+        position: absolute;
+        top: 18px;
+        font-size: 1.2rem;
+        color: var(--rust);
+      }
+
+      .hero::before {
+        left: 22px;
+      }
+
+      .hero::after {
+        right: 22px;
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 0.82rem;
+        margin: 0 0 12px;
+        color: var(--rust);
+        font-weight: bold;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 7vw, 4.5rem);
+        line-height: 0.95;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+      }
+
+      .subhead {
+        margin: 14px auto 0;
+        max-width: 34rem;
+        font-size: 1.15rem;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin-top: 22px;
+        flex-wrap: wrap;
+      }
+
+      .icon-badge {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: rgba(255, 248, 236, 0.9);
+        border: 2px solid var(--brown);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 6px 14px rgba(63, 42, 29, 0.12);
+      }
+
+      .icon-badge svg {
+        width: 42px;
+        height: 42px;
+        fill: var(--rust);
+      }
+
+      .content {
+        padding: 28px;
+      }
+
+      .details {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+        margin-bottom: 24px;
+      }
+
+      .card {
+        background: #fffaf1;
+        border: 2px solid var(--tan);
+        border-radius: 18px;
+        padding: 18px;
+      }
+
+      .card h2 {
+        margin: 0 0 8px;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--brown);
+      }
+
+      .card p {
+        margin: 0;
+      }
+
+      .message {
+        background: #fffdf8;
+        border: 2px dashed var(--tan);
+        border-radius: 18px;
+        padding: 22px;
+      }
+
+      .message p {
+        margin: 0 0 1rem;
+        font-size: 1.05rem;
+      }
+
+      .message p:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: var(--rust);
+        font-weight: bold;
+      }
+
+      .footer {
+        margin-top: 22px;
+        text-align: center;
+        font-size: 0.98rem;
+        color: var(--brown);
+      }
+
+      .footer strong {
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          padding: 12px;
+        }
+
+        .hero,
+        .content {
+          padding-left: 18px;
+          padding-right: 18px;
+        }
+
+        .subhead {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="invite">
+        <header class="hero">
+          <p class="eyebrow">Boots, Hats, and Birthday Merriment</p>
+          <h1>Garden Party</h1>
+          <p class="subhead">
+            A Western-themed birthday gathering for me and my friend Junior.
+          </p>
+
+          <div class="icons" aria-hidden="true">
+            <div class="icon-badge">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Cowboy hat icon">
+                <path d="M16 30c3-7 5-14 6-20 0-2 2-4 4-4h12c2 0 4 2 4 4 1 6 3 13 6 20h4c5 0 8 2 8 5 0 5-10 8-28 8S4 40 4 35c0-3 3-5 8-5h4zm11 0h10c-1-5-2-10-3-15h-4c-1 5-2 10-3 15z" />
+              </svg>
+            </div>
+            <div class="icon-badge">
+              <svg viewBox="0 0 64 64" role="img" aria-label="Cowboy boots icon">
+                <path d="M12 10h12v14c0 6 3 11 9 13l5 2v10H12c-4 0-8-3-8-8v-4h13V10zm28 0h12v11c0 4 2 7 6 9l2 1v18H36c-4 0-8-3-8-8v-4h12V10z" />
+              </svg>
+            </div>
+          </div>
+        </header>
+
+        <div class="content">
+          <section class="details" aria-label="Event details">
+            <article class="card">
+              <h2>When</h2>
+              <p><strong>Sunday, May 3, 2026</strong><br />2:00 PM to 6:00 PM</p>
+            </article>
+
+            <article class="card">
+              <h2>What</h2>
+              <p>A laid-back garden party with a cowboy boots and hats vibe.</p>
+            </article>
+
+            <article class="card">
+              <h2>Food & Drink</h2>
+              <p>
+                Tacos, beer, wine, and LaCroix will be on hand. Feel free to
+                bring anything else you'd like to drink.
+              </p>
+            </article>
+          </section>
+
+          <section class="message">
+            <p>
+              We’re using our birthdays as an excuse to gather everyone for a
+              sunny afternoon in the garden.
+            </p>
+
+            <p>
+              <strong>No gifts, please.</strong> But if you'd like, you're very
+              welcome to make a donation to
+              <a href="https://www.pacificcenter.org/donate" target="_blank" rel="noreferrer"
+                >Pacific Center</a
+              >,
+              an organization that contributed significantly to Junior's and my
+              high school years.
+            </p>
+
+            <p>
+              Come by in whatever makes you feel festive. Western flair is very
+              welcome.
+            </p>
+          </section>
+
+          <p class="footer">
+            <strong>Y’all come celebrate.</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
