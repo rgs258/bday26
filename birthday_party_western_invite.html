@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garden Birthday Party</title>
     <style>
+      html, body { height: 100%; }
       :root {
         --cream: #f8f1e4;
         --sand: #ead7b7;
@@ -16,9 +17,7 @@
         --shadow: rgba(63, 42, 29, 0.18);
       }
 
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
@@ -63,13 +62,8 @@
         color: var(--rust);
       }
 
-      .hero::before {
-        left: 22px;
-      }
-
-      .hero::after {
-        right: 22px;
-      }
+      .hero::before { left: 22px; }
+      .hero::after { right: 22px; }
 
       .eyebrow {
         text-transform: uppercase;
@@ -119,9 +113,7 @@
         fill: var(--rust);
       }
 
-      .content {
-        padding: 28px;
-      }
+      .content { padding: 28px; }
 
       .details {
         display: grid;
@@ -145,9 +137,7 @@
         color: var(--brown);
       }
 
-      .card p {
-        margin: 0;
-      }
+      .card p { margin: 0; }
 
       .message {
         background: #fffdf8;
@@ -161,9 +151,7 @@
         font-size: 1.05rem;
       }
 
-      .message p:last-child {
-        margin-bottom: 0;
-      }
+      .message p:last-child { margin-bottom: 0; }
 
       a {
         color: var(--rust);
@@ -183,19 +171,9 @@
       }
 
       @media (max-width: 640px) {
-        .page {
-          padding: 12px;
-        }
-
-        .hero,
-        .content {
-          padding-left: 18px;
-          padding-right: 18px;
-        }
-
-        .subhead {
-          font-size: 1rem;
-        }
+        .page { padding: 12px; }
+        .hero, .content { padding-left: 18px; padding-right: 18px; }
+        .subhead { font-size: 1rem; }
       }
     </style>
   </head>
@@ -203,20 +181,20 @@
     <main class="page">
       <section class="invite">
         <header class="hero">
-          <p class="eyebrow">Boots, Hats, and Birthday Merriment</p>
+          <p class="eyebrow">Birthday Celebration</p>
           <h1>Garden Party</h1>
           <p class="subhead">
-            A Western-themed birthday gathering for me and my friend Junior.
+            A relaxed afternoon gathering to celebrate birthdays.
           </p>
 
           <div class="icons" aria-hidden="true">
             <div class="icon-badge">
-              <svg viewBox="0 0 64 64" role="img" aria-label="Cowboy hat icon">
+              <svg viewBox="0 0 64 64">
                 <path d="M16 30c3-7 5-14 6-20 0-2 2-4 4-4h12c2 0 4 2 4 4 1 6 3 13 6 20h4c5 0 8 2 8 5 0 5-10 8-28 8S4 40 4 35c0-3 3-5 8-5h4zm11 0h10c-1-5-2-10-3-15h-4c-1 5-2 10-3 15z" />
               </svg>
             </div>
             <div class="icon-badge">
-              <svg viewBox="0 0 64 64" role="img" aria-label="Cowboy boots icon">
+              <svg viewBox="0 0 64 64">
                 <path d="M12 10h12v14c0 6 3 11 9 13l5 2v10H12c-4 0-8-3-8-8v-4h13V10zm28 0h12v11c0 4 2 7 6 9l2 1v18H36c-4 0-8-3-8-8v-4h12V10z" />
               </svg>
             </div>
@@ -224,7 +202,7 @@
         </header>
 
         <div class="content">
-          <section class="details" aria-label="Event details">
+          <section class="details">
             <article class="card">
               <h2>When</h2>
               <p><strong>Sunday, May 3, 2026</strong><br />2:00 PM to 6:00 PM</p>
@@ -232,7 +210,7 @@
 
             <article class="card">
               <h2>What</h2>
-              <p>A laid-back garden party with a cowboy boots and hats vibe.</p>
+              <p>A laid-back garden gathering.</p>
             </article>
 
             <article class="card">
@@ -253,21 +231,16 @@
             <p>
               <strong>No gifts, please.</strong> But if you'd like, you're very
               welcome to make a donation to
-              <a href="https://www.pacificcenter.org/donate" target="_blank" rel="noreferrer"
-                >Pacific Center</a
-              >,
+              <a href="https://www.pacificcenter.org/donate" target="_blank" rel="noreferrer">
+                Pacific Center
+              </a>,
               an organization that contributed significantly to Junior's and my
               high school years.
-            </p>
-
-            <p>
-              Come by in whatever makes you feel festive. Western flair is very
-              welcome.
             </p>
           </section>
 
           <p class="footer">
-            <strong>Y’all come celebrate.</strong>
+            <strong>Hope to see you there.</strong>
           </p>
         </div>
       </section>
